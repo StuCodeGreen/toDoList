@@ -7,3 +7,13 @@
   color: gray;
   text-decoration: line-through;
 }
+
+.slideSource {
+  opacity: 1;
+  transition: 1s;
+}
+
+.fade {
+  opacity: 0;
+  transition: 1s;
+}
