@@ -1,16 +1,23 @@
 var li = document.querySelectorAll("li");
-var deleteButton = document.querySelectorAll("span");
+var inp = document.querySelector("input");
+var newUl = document.createElement("ul")
+// var newLi = document.createElement("li");
+var ul = document.querySelector("ul")
+// var deleteButton = document.querySelectorAll("span");
 
-function click (){
-  for(i=0; i < li.length; i++){
-    li[i].addEventListener("click",function(){
-// using css class to toggle done/undone
-      this.classList.toggle("completed")
 
-    });
+inp.addEventListener("keypress", (event) => {
+  const keyName = event.key;
+  if(event.which === 13){
+    //grabbing new todo text from input
+    var todoText = inp.value;
+    inp.value = "";
+  // create new li and add to ul
+    var newLi = document.createElement("li");
+    newLi.innerHTML = todoText;
+    ul.append(newLi);
   }
-}
-click();
+})
 
 // Solution using FX function from http://jsfiddle.net/LzX4s/ and referencing code from  Tarun Kumar Jain.
 document.querySelector("ul").addEventListener("click", function(event){
@@ -26,7 +33,9 @@ document.querySelector("ul").addEventListener("click", function(event){
 		});
 	}else{
 		event.target.classList.toggle("completed");
+
 	}
+
 });
 
 (function() {
@@ -107,9 +116,20 @@ document.querySelector("ul").addEventListener("click", function(event){
     window.FX = FX;
 })()
 
+// function click (){
+//   for(i=0; i < li.length; i++){
+//     li[i].addEventListener("click",function(){
+// // using css class to toggle done/undone
+//       this.classList.toggle("completed")
+//
+//     });
+//   }
+// }
+// click();
 
 
 
+//
 // for(i=0; i<deleteButton.length;i++) {
 //   deleteButton[i].addEventListener("click",function(event){
 //       this.parentNode.classList.toggle("fade")
@@ -119,7 +139,7 @@ document.querySelector("ul").addEventListener("click", function(event){
 //       setTimeout(5000),this.parentNode.remove()
 //   })
 // }
-
+//
 
 // using javascript to toggle done/undone
 
