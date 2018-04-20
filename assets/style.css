@@ -25,6 +25,7 @@ input:focus {
    list-style: none;
    padding: 0;
    margin:0;
+  
  }
 li {
   background: #fff;
@@ -50,12 +51,12 @@ body {
   text-decoration: line-through;
 }
 
-/* .slideSource {
+.slideSource {
   opacity: 1;
   transition: 1s;
-} */
+}
 
-/* .fade {
+.fade {
   opacity: 0;
   transition: 1s;
-} */
+}
