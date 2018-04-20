@@ -7,14 +7,14 @@ var ul = document.querySelector("ul")
 
 
 inp.addEventListener("keypress", (event) => {
-  const keyName = event.key;
-  if(event.which === 13){
+  // const keyName = event.key;
+  if(event.which === 13 && inp.value != ""){
     //grabbing new todo text from input
     var todoText = inp.value;
     inp.value = "";
   // create new li and add to ul
     var newLi = document.createElement("li");
-    newLi.innerHTML = todoText;
+    newLi.innerHTML = "<span>X</span> "+ todoText;""
     ul.append(newLi);
   }
 })
@@ -126,8 +126,6 @@ document.querySelector("ul").addEventListener("click", function(event){
 //   }
 // }
 // click();
-
-
 
 //
 // for(i=0; i<deleteButton.length;i++) {
