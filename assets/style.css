@@ -1,5 +1,5 @@
 h1{
-  background: gold;
+  background: #FF512F;
   color: white;
   margin: 0;
   padding: 10px 20px;
@@ -18,7 +18,7 @@ input {
 
 input:focus {
   background: white;
-  border: 3px solid gold ;
+  border: 3px solid #FF512F;
   outline: none;
 }
  ul{
@@ -28,7 +28,7 @@ input:focus {
 
  }
 li {
-  
+
   background: #fff;
   height: 40px;
   line-height: 40px;
@@ -38,8 +38,16 @@ li {
 li:nth-child(2n) {
   background: #f7f7f7;
 }
+
+li span .fa-trash-alt {
+  f2ed
+}
 body {
   font-family: 'Roboto', sans-serif;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .container {
   background: #f7f7f7;
