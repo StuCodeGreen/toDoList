@@ -28,7 +28,7 @@ input:focus {
 
  }
 li {
-
+  position: relative;
   background: #fff;
   height: 40px;
   line-height: 40px;
@@ -38,9 +38,28 @@ li {
 li:nth-child(2n) {
   background: #f7f7f7;
 }
+span {
+  height: 40px;
+  width: 0px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: red;
+  display: inline-block;
 
-li span .fa-trash-alt {
-  f2ed
+}
+li:hover span {
+  width: 40px;
+  transition: 0.3s;
+}
+.fa-trash-alt {
+
+  color: white;
+
+
+}
+.fa-plus {
+  float:right;
+
 }
 body {
   font-family: 'Roboto', sans-serif;
