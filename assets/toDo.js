@@ -37,12 +37,8 @@ ul.addEventListener("click",function(event){
       duration: 300,
       complete: function(){event.target.parentNode.parentNode.removeChild(event.target.parentNode);}
     });
-  }else if(event.target.tagName.toLowerCase() === "i"){
-    FX.fadeOut(event.target.parentNode.parentNode,{
-      duration: 300,
-      complete: function(){event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);}
-    });
-  }else if (event.target.tagName.toLowerCase() === "li"){
+  }
+  else if (event.target.tagName.toLowerCase() === "li"){
     event.target.classList.toggle("completed");
 
   }
