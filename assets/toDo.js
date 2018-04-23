@@ -14,7 +14,7 @@ inp.addEventListener("keypress", (event) => {
     inp.value = "";
     // create new li and add to ul
     var newLi = document.createElement("li");
-    newLi.innerHTML = " <span>X</span> "+todoText;" "
+    newLi.innerHTML = " <span><i class='fas fa-trash-alt' ></i></span> "+todoText;" "
     ul.append(newLi);
   }
 })

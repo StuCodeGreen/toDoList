@@ -45,7 +45,8 @@ span {
   text-align: center;
   background-color: red;
   display: inline-block;
-
+  border-top-right-radius: 10%;
+  border-bottom-right-radius:10%; 
 }
 li:hover span {
   width: 40px;
