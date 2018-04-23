@@ -36,6 +36,7 @@ li {
   line-height: 40px;
   /* color:#666; */
 
+
 }
 li:nth-child(2n) {
   background: #f7f7f7;
@@ -49,10 +50,12 @@ span {
   display: inline-block;
   border-top-right-radius: 10%;
   border-bottom-right-radius:10%;
+  opacity: 0;
 }
 li:hover span {
   width: 40px;
   transition: 0.3s;
+  opacity: 1;
 }
 .fa-trash-alt {
 

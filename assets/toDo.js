@@ -28,8 +28,8 @@ inp.addEventListener("keypress", (event) => {
 //     event.target.classList.toggle("completed")
 //   }
 // })
-document.querySelector(".fa-plus").addEventListener("click",function(){
-  inp.classList.toggle("inpHide")})
+// document.querySelector(".fa-plus").addEventListener("click",function(){
+//   inp.classList.toggle("inpHide")})
 
 // Solution using FX function from http://jsfiddle.net/LzX4s/ and referencing code from  Tarun Kumar Jain.
 ul.addEventListener("click",function(event){
