@@ -13,12 +13,14 @@ input {
   box-sizing: border-box;
   background: #f7f7f7;
   /* color: gold; */
-  border:3px solid rgba(0,0,0,0);
+  border:2px solid rgba(0,0,0,0);
+  font-size: 20px;
+
   }
 
 input:focus {
   background: white;
-  border: 3px solid #FF512F;
+  border:2px solid #FF512F;
   outline: none;
 }
  ul{
@@ -46,7 +48,7 @@ span {
   background-color: red;
   display: inline-block;
   border-top-right-radius: 10%;
-  border-bottom-right-radius:10%; 
+  border-bottom-right-radius:10%;
 }
 li:hover span {
   width: 40px;
@@ -88,4 +90,7 @@ body {
 .fade {
   opacity: 0;
   transition: 1s;
+}
+.inpHide {
+  display: none;
 }
