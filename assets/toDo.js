@@ -53,8 +53,8 @@ ul.addEventListener("click",function(event){
 
 });
 
-document.getElementsByClassName("fa-plus")[0].addEventListener("click",function(event){
-  var inputBox = document.getElementsByTagName("input")[0];
+document.querySelector(".fa-plus").addEventListener("click",function(event){
+  var inputBox = document.querySelector("input");
   if(inputBox.style.display === "inline-block" || inputBox.style.display === ""){
     FX.fadeOut(inputBox , {
       duration: 500,
