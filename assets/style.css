@@ -1,3 +1,11 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 h1{
   background: #FF512F;
   color: white;
@@ -5,43 +13,6 @@ h1{
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: normal;
-
-}
-input {
-  width:100%;
-  padding: 13px 13px 13px 20px;
-  box-sizing: border-box;
-  background: #f7f7f7;
-  /* color: gold; */
-  border:2px solid rgba(0,0,0,0);
-  font-size: 20px;
-  display: inline-block;
-
-  }
-
-input:focus {
-  background: white;
-  border:2px solid #FF512F;
-  outline: none;
-}
- ul{
-   list-style: none;
-   padding: 0;
-   margin:0;
-
- }
-li {
-  position: relative;
-  background: #fff;
-  height: 40px;
-  line-height: 40px;
-  /* color:#666; */
-
-
-}
-li:nth-child(2n) {
-  background: #f7f7f7;
-
 
 }
 span {
@@ -55,48 +26,72 @@ span {
   border-bottom-right-radius:10%;
   opacity: 0;
 }
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin:0;
+
+}
+li {
+ position: relative;
+ background: #fff;
+ height: 40px;
+ line-height: 40px;
+ /* color:#666; */
+
+
+}
+li:nth-child(2n) {
+ background: #f7f7f7;
+
+
+}
+
 li:hover span {
   width: 40px;
   transition: 0.3s;
   opacity: 1;
 }
-.fa-trash-alt {
-
-  color: white;
 
 
+input {
+  width:100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  /* color: gold; */
+  border:2px solid rgba(0,0,0,0);
+  font-size: 20px;
+
+
+  }
+
+input:focus {
+  background: white;
+  border:2px solid #FF512F;
+  outline: none;
 }
-.fa-plus {
-  float:right;
 
-}
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #FF512F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
 .container {
   background: #f7f7f7;
   width: 360px;
   margin: 100px auto;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
+
+.fa-trash-alt {
+  color: white;
+}
+.fa-plus {
+  float:right;
+}
+
 .completed {
   color: gray;
   text-decoration: line-through;
 }
 
-.slideSource {
-  opacity: 1;
-  transition: 1s;
-}
-
-.fade {
-  opacity: 0;
-  transition: 1s;
-}
 .inpHide {
   display: none;
 }
